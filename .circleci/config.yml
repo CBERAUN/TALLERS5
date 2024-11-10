@@ -31,8 +31,7 @@ jobs:
             cd bankchurn-api 
             railway up --service=tallers5servicio
             railway up --detach
-          environment:
-            RAILWAY_TOKEN: $RAILWAY_TOKEN
+
 
 tags_only: &tags_only
   filters:
@@ -49,5 +48,4 @@ workflows:
           filters:
             branches:
               only:
-                - main
                 - master
